@@ -19,7 +19,7 @@ function introduce(name, age, ...hobbies) {
   console.log(`Age:${age}`);
   console.log(`Hobbies:${hobbies.join(",")}`);
 }
-introduce("Vượng", 19, "Bóng đá", "Cầu lông", "Bơi lội");
+introduce("Vượng", 19, "javascript", "Html-css", "java");
 createUser = (name = "Anonymous", age = 18, isAdmin = false) => {
   return {
     name,
