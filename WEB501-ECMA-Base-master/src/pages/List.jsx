@@ -1,7 +1,6 @@
 import toast from 'react-hot-toast'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-
 const API = "  http://localhost:3000"
 // Hiển thị
 function List(){
@@ -68,7 +67,7 @@ function List(){
                   <img src={tour.image} alt={tour.name}  className="w-16 h-12 object-cover rounded" />
                 </td>
                 <td>
-                  <button onClick={() => Delete(tour.id)}>Xóa</button>
+                  <button onClick={() => Delete(tour.id)} className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Xóa</button>
                 </td>
               </tr>
             ))}
