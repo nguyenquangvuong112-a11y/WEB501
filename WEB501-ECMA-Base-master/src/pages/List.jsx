@@ -1,6 +1,7 @@
 import toast from 'react-hot-toast'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 const API = "  http://localhost:3000"
 // Hiển thị
 function List(){
@@ -68,6 +69,9 @@ function List(){
                 </td>
                 <td>
                   <button onClick={() => Delete(tour.id)} className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Xóa</button>
+                  <Link to={`/edit/${tour.id}`}>
+                      <button className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Sửa</button>
+                    </Link>
                 </td>
               </tr>
             ))}
