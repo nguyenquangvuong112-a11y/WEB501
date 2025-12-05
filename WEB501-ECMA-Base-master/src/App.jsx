@@ -3,6 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import List from "./pages/List"; // import list 
 import Add from "./pages/Add"; // import adđ
 import Edit from "./pages/Edit"; // import edit
+import Register from './pages/Register';
+import Login from "./pages/Login";
+import { Link } from "react-router-dom";
+
 function App() {
   return (
     <>
@@ -16,21 +20,21 @@ function App() {
             <a href="#" className="hover:text-gray-200">
               Trang chủ
             </a>
-            <a href="/List" className="hover:text-gray-200">
+            <Link to="/list" className="hover:text-gray-200">
               Danh sách
-            </a>
-            <a href="/Add" className="hover:text-gray-200">
+            </Link>
+            <Link to="/add" className="hover:text-gray-200">
               Thêm mới
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
-            <a href="#" className="hover:text-gray-200">
+            <Link to="/Login" className="hover:text-gray-200">
               Đăng nhập
-            </a>
-            <a href="#" className="hover:text-gray-200">
+            </Link>
+            <Link to="/Register" className="hover:text-gray-200">
               Đăng ký
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -44,6 +48,8 @@ function App() {
           <Route path="/list" element={<List/>}></Route>
           <Route path="/add" element={<Add/>}></Route>
           <Route path="/edit/:id" element={<Edit/>} />
+          <Route path="/register" element={<Register/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
 
       </div>

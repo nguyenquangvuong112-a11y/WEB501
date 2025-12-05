@@ -62,7 +62,7 @@ function List(){
               <tr key = {tour.id}  className="border-b hover:bg-gray-50">
                 <td className="px-4 py-3">{index + 1}</td>
                 <td className="px-4 py-3">{tour.name}</td>
-                <td className="px-4 py-3">{tour.price.toLocaleString()}$</td>
+                <td className="px-4 py-3">{tour.price}</td>
                 <td className="px-4 py-3">{tour.duration}</td>
                 <td className="px-4 py-3">
                   <img src={tour.image} alt={tour.name}  className="w-16 h-12 object-cover rounded" />

@@ -22,5 +22,27 @@
       "category": "Tour noi dia",
       "id": 5
     }
+  ],
+  "users": [
+    {
+      "email": "email@gmail.com",
+      "password": "$2a$10$cMHUBiWq.8FGc9BhcPMibueS8s/WOZGZfiTzTTHwPxEioB6As/qFS",
+      "id": 1
+    },
+    {
+      "email": "email1@gmail.com",
+      "password": "$2a$10$NPUh5gZ7IXLqd2.Ie9NA7u2Pt83XHXxvkn0Zg/4Wm4jCyyIYzQLAe",
+      "id": 2
+    },
+    {
+      "email": "nguyenquangvuong849@gmail.com",
+      "password": "$2a$10$mmBWNPwSC//n.uua87oPeOsis8UC02OVRQg2MZpuBMJtEYVBR/YyG",
+      "id": 3
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$/bMMmHIVJtoAwOHWg.hGSeuNiKMiqZ2G9l7cRwXCLLjCkwqfzn7k.",
+      "id": 4
+    }
   ]
 }
